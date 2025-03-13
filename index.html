@@ -24,10 +24,12 @@
             text-decoration: none;
             display: block;
             padding: 10px 0;
+            transition: background-color 0.3s ease;
         }
 
         .sidebar a:hover {
-            background-color: #575757;
+            color: green;
+
         }
 
         .main {
@@ -39,8 +41,6 @@
         .top {
             height: 40vh;
             background: url('static/images/Engines-maintenance-in-huge-industrial-hall.jpg') no-repeat center center;
-            background-color: rgba(0, 0, 0, 0.9);
-            /* Increased opacity for a darker overlay */
             background-size: cover;
             display: flex;
             align-items: center;
@@ -50,17 +50,26 @@
             position: relative;
         }
 
-        .top h1 {
+        .top::before {
+            content: '';
             position: absolute;
-            top: 50%;
+            top: 0;
             left: 0;
             right: 0;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Full dark overlay */
+            z-index: 0;
+            /* Ensure it's behind the content */
+        }
+
+        .top h1 {
+            position: relative;
+            z-index: 1;
+            /* Ensure the text is above the overlay */
             padding: 10px;
             color: white;
             margin: 0;
-            z-index: 1;
         }
 
         .bottom {
