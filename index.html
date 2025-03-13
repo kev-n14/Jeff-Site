@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Aviation Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #111;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .main {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top {
+            height: 40vh;
+            background: url('/static/images/Engines-maintenance-in-huge-industrial-hall.jpg') no-repeat center center;
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Increased opacity for a darker overlay */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .top h1 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            color: white;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .bottom {
+            height: 60vh;
+            padding: 20px;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="/static/images/1670853060256.jpg" alt="Apex Aviation Logo" class="img-fluid mb-3"
+            style="width: 100px; height: auto;">
+        <h3>Apex Aviation</h3>
+        <a href=" #">Portal</a>
+        <a href="#">TPS-000606-S027</a>
+        <a href="#">TPS-000610-S001</a>
+        <a href="#">TPS-000619-S001</a>
+        <a href="#">TPS-000628-S007</a>
+    </div>
+    <div class="main">
+        <div class="top">
+            <h1 class="display-1 fw-bold text-uppercase">Portal</h1>
+        </div>
+        <div class="bottom">
+            <div class="table-container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>OEM Part Number</th>
+                            <th>TPS Part Number</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>70-03-004 (#36)</td>
+                            <td>TPS-000606-S027</td>
+                            <td>Frank Brown & Son CFM56 Engine Cradle Castor Indexing Spigot</td>
+                        </tr>
+                        <tr>
+                            <td>HIX3011-0G</td>
+                            <td>TPS-000610-S001</td>
+                            <td>Gauge HIX3011-0G</td>
+                        </tr>
+                        <tr>
+                            <td>N/A</td>
+                            <td>TPS-000619-S001</td>
+                            <td>Grease Applicator End Cap</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
